@@ -1,0 +1,19 @@
+{
+  "name": "My Extension Browser",
+  "description": "Base Level Extension",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "browser_popup.html",
+    "default_icon": "demo1-logo.png"
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F",
+        "mac": "MacCtrl+Shift+F"
+      },
+      "description": "Opens browser_popup.html"
+    }
+  }
+}
