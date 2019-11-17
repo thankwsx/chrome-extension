@@ -1,6 +1,6 @@
 {
-  "name": "My Extension Browser",
-  "description": "Base Level Extension",
+  "name": "demo1 browser action",
+  "description": "The 1st demo",
   "version": "0.0.1",
   "manifest_version": 2,
   "browser_action": {

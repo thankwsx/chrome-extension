@@ -1,6 +1,6 @@
 {
-  "name": "My Extension Page",
-  "description": "Base Level Extension",
+  "name": "demo2 page action",
+  "description": "The 2nd demo",
   "version": "0.0.1",
   "manifest_version": 2,
   "page_action": {
@@ -16,7 +16,19 @@
       "description": "Opens page_popup.html"
     }
   },
+  "omnibox": {
+    "keyword": "mani"
+  },
+  "permissions": [
+    "declarativeContent"
+  ],
   "background": {
     "scripts": ["bg.js"]
-  }
+  },
+  "content_scripts": [{
+    "matches": ["https://*.qq.com/*"],
+    "css": ["qq.css"],
+    "js": ["qq.js"],
+    "match_about_blank": true
+  }]
 }
