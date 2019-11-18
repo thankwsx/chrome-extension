@@ -1,0 +1,20 @@
+{
+  "name": "Weiyun Zimu",
+  "description": "为微云视频添加字幕功能",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "permissions": [
+      "contextMenus",
+      "activeTab"
+  ],
+  "background": {
+      "scripts":["bg.js"],
+      "persistent": false
+  },
+  "content_scripts": [
+      {
+          "js": ["lib/base64.js", "vtt.js"],
+          "matches": ["https://*.weiyun.com/*"]
+      }
+  ]
+}
