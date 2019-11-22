@@ -1,0 +1,12 @@
+{
+  "name": "demo4 Context Menus",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "permissions": [
+    "contextMenus"
+  ],
+  "background": {
+      "scripts": ["bg.js"],
+      "persistent": false
+  }
+}
