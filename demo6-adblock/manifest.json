@@ -1,0 +1,14 @@
+{
+  "name": "demo6 Adblock",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "permissions": [
+      "webRequest",
+      "webRequestBlocking",
+      "https://*.qq.com/*"
+  ],
+  "background": {
+      "scripts": ["bg.js"],
+      "persistent": true
+  }
+}
