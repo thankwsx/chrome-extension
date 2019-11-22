@@ -1,6 +1,5 @@
 {
   "name": "demo1 browser action",
-  "description": "The 1st demo",
   "version": "0.0.1",
   "manifest_version": 2,
   "browser_action": {
@@ -14,6 +13,16 @@
         "mac": "MacCtrl+Shift+F"
       },
       "description": "Opens browser_popup.html"
+    },
+    "custom_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+C"
+      },
+      "description": "Test Command"
     }
+  },
+  "background": {
+    "scripts": ["bg.js"],
+    "persistent": false
   }
 }
