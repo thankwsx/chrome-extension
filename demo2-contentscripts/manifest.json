@@ -1,0 +1,9 @@
+{
+  "name": "demo2 contentscripts",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "content_scripts": [{
+    "js": ["hidead.js"],
+    "matches": ["https://*.qq.com/*"]
+  }]
+}
