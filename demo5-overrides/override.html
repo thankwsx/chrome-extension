@@ -1,0 +1,30 @@
+<html>
+
+<head>
+<meta charset="utf-8" />
+</head>
+
+<body>
+    <h1>你可以使用本页面的代码覆盖manifest.json中的配置，查看浏览器几个页面被覆盖后的效果。</h1>
+    <h2>manifest.json中覆盖新标签页配置</h2>
+<code><pre>
+"chrome_url_overrides" : {
+    "newtab": "override.html"
+}
+</pre></code>
+<h2>manifest.json中覆盖历史记录页配置</h2>
+<code><pre>
+"chrome_url_overrides" : {
+    "history": "override.html"
+}
+</pre></code>
+<h2>manifest.json中覆盖下载页配置</h2>
+    <code><pre>
+"chrome_url_overrides" : {
+    "bookmarks": "override.html"
+}
+</pre></code>
+    <script src="override.js"></script>
+</body>
+
+</html>
